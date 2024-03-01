@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+figure{
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: #98ABEE;
+    font-size: 3.5rem;
+}
+
+p, table tr th {
+    color: #884A39;
+    font-size: 1.2rem;
+}
+
+.navbar-cont .logo img {
+    padding-left: 6rem;
+    width: 200px;
+}
+
+.navbar-cont {
+    background-color: #FFF8F5;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    padding-block: 1rem;
+    z-index: 999;
+}
+
+.navbar-cont .list-nav ul {
+    gap: 3rem;
+    padding-left: 17rem;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header.navbar-cont .list-nav a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #98ABEE;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    padding: 10px;
+}
+
+header.navbar-cont .list-nav li:hover a {
+    background-color: #98ABEE;
+    color: white;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.bawah{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.more-info {
+    height: fit-content;
+    padding: 20px;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.set{
+    display: flex;
+    justify-content: center;
+}
+
+.tes1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.tes2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.hewan {
+    width: 20rem;
+}
+
+.welcome, .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.containt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.pet2 {
+    padding-right: 3rem;
+    width: 25rem;
+    height: 15rem;
+}
+
+.welcome-judul,
+.welcome p,
+.about-judul {
+    text-align: center;
+    margin: 0;
+}
+
+.anu {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    max-width: 400px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+label {
+    color: #884A39;
+    font-weight: bold;
+    font-size: 1.75rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+button {
+    margin-top: 7px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 14px;
+    border-radius: 15px;
+    background-color: #333A73;
+    color: #FFF8F5;
+    border: none;
+}
+
+button:hover {
+    background-color: #D2C0B4;
+    color: white;
+}
+
+footer {
+    padding: 1.25rem;
+    background-color: #FFF8F5;
+    color: #98ABEE;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    aside{
+        width: 40%;
+        padding: 0;
+    }
+    .pc {
+        display: none;
+    }
+    .navbar-cont .list-nav ul{
+        padding: 0;
+    }
+    .navbar-cont .logo img{
+        padding: 0;
+    }
+    .navbar-cont{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .anu{
+        flex-direction: column;
+    }
+    footer{
+        margin-top: 27px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1000px) {
+    aside{
+        width: 100%;
+        padding: 0;
+    }
+    .mobile {
+        display: none;
+    }
+}
